@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
 import Animated from 'react-native-reanimated';
-import { colors } from '../../../utils';
+import { colors, fonts } from '../../../utils';
 
 const TabNavigator = ({ state, descriptors, navigation, position }) => {
     return (
@@ -43,10 +43,10 @@ const TabNavigator = ({ state, descriptors, navigation, position }) => {
                 });
                 console.log(isFocused)
                 return (
-                    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: colors.primary }}>
-                        <View style={{ marginTop: 30, zIndex: 1 }} >
+                    <View key={index} style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white' }}>
+                        
+                        <View style={{ marginTop: 0, zIndex: 1 }}>
                             <TouchableOpacity
-                                key={index}
                                 accessibilityRole="button"
                                 accessibilityStates={isFocused ? ['selected'] : []}
                                 accessibilityLabel={options.tabBarAccessibilityLabel}
@@ -54,14 +54,22 @@ const TabNavigator = ({ state, descriptors, navigation, position }) => {
                                 onPress={onPress}
                                 onLongPress={onLongPress}
                             >
-                                <View style={{ backgroundColor: colors.white, borderRadius: 10, height: 30, justifyContent: 'center', alignItems: 'center' }}>
-                                    <Text style={{ color: colors.primary, margin: 10 }}>
+                                {/* <View style={{ borderWidth:2, borderColor: isFocused ? '#066b06' : '#2e732e',backgroundColor: '#2e732e',  height: 30, width:90, justifyContent: 'center', alignItems: 'center' }}>
+                                    <Text style={{ color: colors.white, margin: 3, fontSize:15, fontFamily:fonts.primary[600] }}>
                                         {label}
                                     </Text>
+                                </View> */}
+                                <View style={{ height: 40, alignContent: 'center', alignItems:'center', marginTop: 10}}>
+                                    <View>
+                                        <Text style={{ fontSize: 17, color: 'black', fontFamily: isFocused ? fonts.primary[400] : fonts.primary[300] }}>{label}</Text>
+                                    </View>
                                 </View>
 
                             </TouchableOpacity>
                         </View>
+                        {
+                            isFocused ? <View style={{height:2,backgroundColor:colors.primary, width:'100%'}} /> : <View style={{height:2,backgroundColor:colors.white, width:'100%'}} />
+                        }
                     </View>
                 );
             })}

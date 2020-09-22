@@ -1,57 +1,100 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
-
-import React from 'react';
+import React from 'react'
 import {
-  SafeAreaView,
   StyleSheet,
-  ScrollView,
-  View,
   Text,
-  StatusBar,
-} from 'react-native';
+  View,
+  Platform,
+  Dimensions,
+  ToastAndroid
+} from 'react-native'
+import { colors, fonts } from '../../utils'
+import { Input, Gap, Button } from '../../components'
+import { useSelector, useDispatch } from 'react-redux'
+import Axios from 'axios'
+import { URLService } from '../../services'
+import { setForm } from '../../redux'
 
-const MyStatusBar = ({backgroundColor, ...props}) => (
-  <View style={[styles.statusBar, { backgroundColor }]}>
-    <StatusBar translucent backgroundColor={backgroundColor} {...props} />
-  </View>
-);
 
+
+const SLIDING_UP_PANEL_HEIGHT = Platform.select({
+  ios: Dimensions.get('window').height,
+  android: Dimensions.get('window').height
+})
 const Login = () => {
+  const {
+    form,
+    isLogin
+  } = useSelector((state) => state.LoginReducer);
+  const dispatch = useDispatch();
+
+  const SendData = () => {
+    dispatch({ type: 'CHANGE_ISLOGIN', isLogin: true })
+    const {
+      email,
+      password
+    } = form;
+
+    const formData = new FormData();
+
+    formData.append('username', email);
+    formData.append('password', password);
+    console.log(`${URLService}crud/login`)
+    Axios.post(`${URLService}crud/login`, formData,{headers: {
+        "key" : "salim"
+      }
+    }).then((res) => {
+      let data = res.data;
+      console.log(data);
+      showToastWithGravity();
+    }).catch((err) => {
+      console.log(err);
+      showToastWithGravity(err);
+    })
+  }
+
+  const showToastWithGravity = (message) => {
+    ToastAndroid.showWithGravityAndOffset(
+      `${message}`,
+      ToastAndroid.LONG,
+      ToastAndroid.BOTTOM,
+      25,
+      50
+    );
+  };
+
+  const onInputChange = (value, inputType) => {
+    dispatch(setForm(inputType, value))
+  }
+
   return (
-    <>
-      <View style={styles.container}>
-        <MyStatusBar backgroundColor="#5E8D48" barStyle="light-content" />
-        <View style={styles.appBar} />
-        <View style={styles.content} />
+    <View style={{flex: 1, backgroundColor: colors.primary, justifyContent:'center'}}>
+      <View style={{backgroundColor:colors.white,height:SLIDING_UP_PANEL_HEIGHT/2.5, borderRadius: 10, marginLeft: 10, marginRight: 10}}>
+        <View style={{ marginLeft: 20, marginRight: 20, marginTop: 50 }}>
+          <Text style={{ fontFamily: fonts.primary[300] }}>Alamat Email</Text>
+          <Gap height={5} />
+          <Input 
+            placeholder="Ketikan Alamat Email"
+            value={form.email}
+            onChangeText={(value) => onInputChange(value, 'email')}
+          />
+          <Gap height={15} />
+          <Text style={{ fontFamily: fonts.primary[300] }}>Password</Text>
+          <Gap height={5} />
+          <Input 
+            placeholder="Ketikan Password"
+            value={form.password}
+            onChangeText={(value) => onInputChange(value, 'password')}
+          />
+          <Gap height={50} />
+          <View style={{ justifyContent: 'center'}}>
+            <Button title="Masuk" onPress={SendData} />
+          </View>
+        </View>
       </View>
-    </>
-  );
-};
+    </View>
+  )
+}
 
-const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 50 : StatusBar.currentHeight;
-const APPBAR_HEIGHT = Platform.OS === 'ios' ? 56 : 56;
+export default Login
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  statusBar: {
-    height: STATUSBAR_HEIGHT,
-  },
-  appBar: {
-    backgroundColor:'#79B45D',
-    height: APPBAR_HEIGHT,
-  },
-  content: {
-    flex: 1,
-    backgroundColor: '#33373B',
-  },
-});
-
-export default Login;
+const styles = StyleSheet.create({})
