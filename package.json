@@ -28,7 +28,8 @@
     "react-native-tab-view": "^2.15.1",
     "react-redux": "^7.2.1",
     "redux": "^4.0.5",
-    "rn-sliding-up-panel": "^2.4.3"
+    "rn-sliding-up-panel": "^2.4.3",
+    "rn-swipeable-panel": "^1.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

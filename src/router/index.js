@@ -8,7 +8,9 @@ import {
     Message,
     Inbox,
     User,
-    Login
+    Login,
+    Pulsa,
+    PLN,
 } from '../pages';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigator } from '../components';
@@ -50,6 +52,14 @@ const Router = () => {
             <Stack.Screen
                 name="MainApp"
                 component={MainApp}
+                options={{ headerShown: false }} />
+            <Stack.Screen
+                name="Pulsa"
+                component={Pulsa}
+                options={{ headerShown: false }} />
+            <Stack.Screen
+                name="PLN"
+                component={PLN}
                 options={{ headerShown: false }} />
         </Stack.Navigator>
     )

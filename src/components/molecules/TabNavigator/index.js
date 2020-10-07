@@ -41,7 +41,6 @@ const TabNavigator = ({ state, descriptors, navigation, position }) => {
                     inputRange,
                     outputRange: inputRange.map(i => (i === index ? 1 : 0)),
                 });
-                console.log(isFocused)
                 return (
                     <View key={index} style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white' }}>
                         
@@ -61,7 +60,7 @@ const TabNavigator = ({ state, descriptors, navigation, position }) => {
                                 </View> */}
                                 <View style={{ height: 40, alignContent: 'center', alignItems:'center', marginTop: 10}}>
                                     <View>
-                                        <Text style={{ fontSize: 17, color: 'black', fontFamily: isFocused ? fonts.primary[400] : fonts.primary[300] }}>{label}</Text>
+                                        <Text style={{ fontSize: 17, color: 'black', fontFamily: isFocused ? fonts.primary[600] : fonts.primary[300] }}>{label}</Text>
                                     </View>
                                 </View>
 

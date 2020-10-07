@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     text: (active) => ({
-        fontSize : 12,
+        fontSize : 11,
         color: active ? colors.text.menuActive : colors.text.menuInactive,
         fontFamily: fonts.primary[800],
         marginTop: 5

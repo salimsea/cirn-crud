@@ -56,10 +56,10 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingHorizontal: 33,
+        paddingHorizontal: 25,
         paddingVertical: 10,
         backgroundColor: colors.white,
-        borderWidth: 0.3,
+        borderWidth: 0.6,
         borderColor: '#dcdcdc',
     }
 })

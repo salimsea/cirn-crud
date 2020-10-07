@@ -5,6 +5,8 @@ import ILCatUmum from './cat-dok-umum.svg';
 import ILCatPsikater from './cat-dok-psikater.svg';
 import ILCatObat from './cat-dok-obat.svg';
 import ILHospitalBG from './hospitals-background.png';
+import ILHeader from './header.png';
+
 
 export {
     ILLogo, 
@@ -13,5 +15,6 @@ export {
     ILCatUmum,
     ILCatPsikater,
     ILCatObat,
-    ILHospitalBG
+    ILHospitalBG,
+    ILHeader
 };
