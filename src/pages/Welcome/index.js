@@ -12,7 +12,7 @@ import {
 } from 'react-native';
 import { getStatusBarHeight } from 'react-native-status-bar-height';
 import { colors } from '../../utils/colors';
-import SlidingUpPanel from 'rn-sliding-up-panel';
+// import SlidingUpPanel from 'rn-sliding-up-panel';
 
 const MyStatusBar = ({ backgroundColor, ...props }) => (
   <View style={[styles.statusBar, { backgroundColor }]}>

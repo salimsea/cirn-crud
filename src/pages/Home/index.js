@@ -74,7 +74,7 @@ const Home = ({navigation}) => {
                     <View> 
                       <Text style={styles.name1}>Sisa Saldo</Text>
                       <Gap height={5} />
-                      <Text style={{fontFamily:fonts.primary[600], fontSize:16, color:colors.primary}}>RP. 100.212.302</Text>
+                      <Text style={{fontFamily:fonts.primary[600], fontSize:16, color:colors.primary}}>RP. 92.890</Text>
                     </View>
                   </View>
                   
@@ -234,17 +234,17 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   background: {
-      height: 180,
-      paddingTop: getStatusBarHeight()+15,
+    height: 180,
+    paddingTop: getStatusBarHeight()+15,
   },
   
   content: {
-      backgroundColor : colors.white,
-      borderTopLeftRadius: 20,
-      borderTopRightRadius: 20,
-      flex: 1,
-      // marginTop: getStatusBarHeight()-105,
-      paddingTop: 14,
+    backgroundColor : colors.white,
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    flex: 1,
+    // marginTop: getStatusBarHeight()-105,
+    paddingTop: 14,
   }
 });
 

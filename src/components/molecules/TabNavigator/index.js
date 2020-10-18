@@ -41,6 +41,8 @@ const TabNavigator = ({ state, descriptors, navigation, position }) => {
                     inputRange,
                     outputRange: inputRange.map(i => (i === index ? 1 : 0)),
                 });
+                // const { cok } = state.params;
+                // console.log(route.params)
                 return (
                     <View key={index} style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'white' }}>
                         

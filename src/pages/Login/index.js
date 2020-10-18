@@ -27,6 +27,8 @@ const Login = () => {
   } = useSelector((state) => state.LoginReducer);
   const dispatch = useDispatch();
 
+  console.log(isLogin)
+
   const SendData = () => {
     dispatch({ type: 'CHANGE_ISLOGIN', isLogin: true })
     const {

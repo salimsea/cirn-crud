@@ -6,6 +6,7 @@ import History from './History/index';
 import Message from './Message';
 import Inbox from './Inbox';
 import User from './User';
+import Checkout from './Checkout';
 import Pulsa from './Pulsa';
 import PLN from './PLN';
 
@@ -21,4 +22,5 @@ export {
     User,
     Pulsa,
     PLN,
+    Checkout,
 };

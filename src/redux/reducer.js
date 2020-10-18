@@ -23,6 +23,14 @@ const initialStateLogin = {
     isLogin: false
 }
 
+const initialStatePulsa = {
+    form: {
+        nomor: '',
+    },
+    info: 'Tolong masukan password anda',
+    isNumber: false
+}
+
 const RegisterReducer = (state = initialStateRegister, action) => {
     if(action.type === 'SET_TITLE'){
         return {
@@ -62,9 +70,30 @@ const LoginReducer = (state = initialStateLogin, action) => {
     return state;
 }
 
+const PulsaReducer = (state = initialStatePulsa, action) => {
+    if(action.type === 'SET_FORM'){
+        return {
+            ...state,
+            form: {
+                ...state.form,
+                [action.inputType]: action.inputValue
+            },
+            isNumber: action.value
+        }
+    }
+    if(action.type === 'CHANGE_ISNUMBER'){
+        return {
+            ...state,
+            isNumber: action.isNumber
+        }
+    }
+    return state;
+}
+
 const reducer = combineReducers({
     RegisterReducer,
     LoginReducer,
+    PulsaReducer,
 })
 
 export default reducer;

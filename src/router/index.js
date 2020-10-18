@@ -11,6 +11,7 @@ import {
     Login,
     Pulsa,
     PLN,
+    Checkout,
 } from '../pages';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { BottomNavigator } from '../components';
@@ -60,6 +61,10 @@ const Router = () => {
             <Stack.Screen
                 name="PLN"
                 component={PLN}
+                options={{ headerShown: false }} />
+            <Stack.Screen
+                name="Checkout"
+                component={Checkout}
                 options={{ headerShown: false }} />
         </Stack.Navigator>
     )

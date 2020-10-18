@@ -20,94 +20,94 @@ const Message = () => {
             </View>
             <View style={{flex:1,borderTopLeftRadius:20,borderTopRightRadius:20,backgroundColor:'white', marginTop:0}}>
             <ScrollView>
-            <View style={styles.content}>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
+                <View style={styles.content}>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
+                    </View>
+                    <View style={styles.container}>
+                        <View style={styles.avatar} /> 
+                        <View>
+                            <Text style={styles.name}>Yasin Hafid</Text>
+                            <Text style={styles.desc}>Dimana lu lim ?</Text>
+                        </View>
                     </View>
                 </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
-                <View style={styles.container}>
-                    <View style={styles.avatar} /> 
-                    <View>
-                        <Text style={styles.name}>Yasin Hafid</Text>
-                        <Text style={styles.desc}>Dimana lu lim ?</Text>
-                    </View>
-                </View>
+            </ScrollView>
             </View>
-                </ScrollView>
-                </View>
         </View>
     )
 }

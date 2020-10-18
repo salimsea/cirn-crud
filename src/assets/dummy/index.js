@@ -8,6 +8,12 @@ import DummyNews3 from './news3.png';
 import DummyHospital1 from './hospital1.png';
 import DummyHospital2 from './hospital2.png';
 import DummyHospital3 from './hospital3.png';
+import PaymentGopay from './payment-gopay.png';
+import PaymentOvo from './payment-ovo.png';
+import PaymentBca from './payment-bca.png';
+import PaymentMandiri from './payment-mandiri.png';
+import PaymentBni from './payment-bni.png';
+import PaymentAbupay from './payment-abupay.png';
 
 export {
     DummyUser,
@@ -20,4 +26,10 @@ export {
     DummyHospital1,
     DummyHospital2,
     DummyHospital3,
+    PaymentGopay,
+    PaymentOvo,
+    PaymentBca,
+    PaymentMandiri,
+    PaymentBni,
+    PaymentAbupay,
 }

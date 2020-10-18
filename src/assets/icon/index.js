@@ -14,6 +14,7 @@ import IconScan from './ic-scan.svg';
 import IconTopup from './ic-topup.svg';
 import IconRefresh from './ic-refresh.svg';
 import IconBackYellow from './ic-back-white.svg';
+import IconCheck from './ic-check.svg';
 
 import IconFPulsa from './ic-f-pulsa.svg';
 import IconFPaketData from './ic-f-paketdata.svg';
@@ -35,6 +36,7 @@ export {
     IconTopup,
     IconRefresh,
     IconBackYellow,
+    IconCheck,
     
     IconFPulsa,
     IconFPaketData,
